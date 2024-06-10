@@ -1,0 +1,76 @@
+@code {
+    [Parameter]
+    public List<string> SiteAlarms { get; set; }
+
+    [Parameter]
+    public List<string> TimeStamps { get; set; }
+
+    [Parameter]
+    public List<string> Messages { get; set; }
+
+    [Parameter]
+    public List<bool> Acks { get; set; }
+
+    [Parameter]
+    public List<string> Notes { get; set; }
+}
+
+<div class="list-component">
+    <h3>Site Alarms</h3>
+    <ul>
+        @foreach (var item in SiteAlarms)
+        {
+            <li>@item</li>
+        }
+    </ul>
+
+    <h3>Time Stamp</h3>
+    <ul>
+        @foreach (var timeStamp in TimeStamps)
+        {
+            <li>@timeStamp</li>
+        }
+    </ul>
+
+    <h3>Message</h3>
+    <ul>
+        @foreach (var message in Messages)
+        {
+            <li>@message</li>
+        }
+    </ul>
+
+    <h3>Ack</h3>
+    <ul>
+        @foreach (var ack in Acks)
+        {
+            <li>@ack</li>
+        }
+    </ul>
+
+    <h3>Notes</h3>
+    <ul>
+        @foreach (var note in Notes)
+        {
+            <li>@note <a href="#">View Notes</a></li>
+        }
+    </ul>
+</div>
+
+<style>
+    .list-component {
+        margin: 20px;
+    }
+    .list-component ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .list-component ul li {
+        padding: 5px 0;
+    }
+    .list-component ul li a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: blue;
+    }
+</style>
