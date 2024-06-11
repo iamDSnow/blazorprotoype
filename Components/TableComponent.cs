@@ -20,3 +20,11 @@ public class SiteAlarm
     public bool? Ack { get; set; }
     public string? Note { get; set; }
 }
+public class ActiveSites
+{
+    public string? Site { get; set; } // Nullable string
+    public string? TimeStamp { get; set; }
+    public string? Message { get; set; }
+    public bool? Ack { get; set; }
+    public string? Note { get; set; }
+}
