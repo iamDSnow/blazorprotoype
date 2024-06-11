@@ -1,109 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
+<link rel="stylesheet" href="~/css/_Layout.css" asp-append-version="true" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - us3</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            width: 100%;
-        }
-        input {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 24px;
-            padding-left: 1em;
-            border: none;
-            background: #F5F7FA;
-            border-radius: 40px;
-            cursor: pointer;
-            color: #8BA3CB;
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #fff;
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
-        }
-        .navbar-brand {
-            cursor: pointer;
-        }
-        .navbar h1 {
-            margin: 0;
-            text-align: center;
-            flex-grow: 1;
-        }
-        .navbar-button {
-            font-weight: 400;
-            cursor: pointer;
-            font-size: 14px;
-            line-height: 24px;
-            border: none;
-            background: #F5F7FA;
-            border-radius: 40px;
-        }
-        .navbar-button:hover {
-            background-color: #ddd;
-        }
-        .navbar form, .navbar button {
-            margin-right: auto;
-        }
-        .content-container {
-            display: flex;
-            flex: 1;
-        }
-        .sidebar {
-            height: calc(100vh - 60px); /* Adjusted for the height of the navbar */
-            width: 250px;
-            background-color: #f8f9fa;
-            padding-top: 20px;
-            border-right: 1px solid #ddd;
-            overflow-y: auto;
-            text-transform: capitalize;
-        }
-        .sidebar a, .sidebar .dropdown-item-text {
-            display: block;
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #333;
-            cursor: pointer;
-        }
-        .sidebar a:hover, .sidebar .dropdown-item-text:hover {
-            background-color: #ddd;
-        }
-        .dropdown-menu {
-            display: none;
-            padding-left: 20px;
-        }
-        .dropdown-menu a {
-            display: block;
-            padding: 5px 15px;
-            font-size: 16px;
-        }
-        .main-content {
-            flex-grow: 1;
-            padding: 20px;
-            overflow-y: auto;
-        }
-        footer {
-            width: 100%;
-            padding: 10px;
-            background: #f8f9fa;
-            border-top: 1px solid #ddd;
-            text-align: center;
-        }
-    </style>
+   
 </head>
 <body>
+
     <header>
         <nav class="navbar">
             <a class="navbar-brand" asp-area="" asp-page="/Index">US3</a>

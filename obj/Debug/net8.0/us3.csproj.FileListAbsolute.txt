@@ -20,11 +20,10 @@ C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\staticwebassets\ms
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.us3.props
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.us3.props
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\scopedcss\bundle\us3.styles.css
-C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\scopedcss\projectbundle\us3.bundle.scp.css
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\us3.dll
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\refint\us3.dll
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\us3.pdb
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\us3.genruntimeconfig.cache
 C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\ref\us3.dll
+C:\Users\Derrick.Snow\Documents\ds\Razor\us3\obj\Debug\net8.0\us3.sourcelink.json

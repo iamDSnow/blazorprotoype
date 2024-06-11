@@ -1,18 +1,147 @@
 ﻿@page
 @model IndexModel
+@using us3.Models
+
 @{
     ViewData["Title"] = "Dashboard";
+
+    var siteAlarms = new List<SiteAlarm> {
+new SiteAlarm { Site = "Site 1", TimeStamp = "2024-06-10 12:34:56", Message = "Example message 1", Ack = true, Note =
+"View Notes" },
+new SiteAlarm { Site = "Site 2", TimeStamp = "2024-06-11 14:00:00", Message = "Example message 2", Ack = false, Note =
+"View Notes" }
+// Add more SiteAlarm objects as needed
+};
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <h3>Site Alarms</h3>
-        <h3>Time Stamp</h3>
-                <h3>Message</h3>
-                <h3>Ack</h3>
-                <h3>Notes</h3>
-                <a> View</a>
-    <div>
-<label>Site</label>
-    </div>
-</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-8eQ/L4z8iYYfWazUbbv6zBdH4n5A4D6kkfBDBF9qG3C5h5PtE08BCHSmBI5QzF+e" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="pageContainer">
+
+        <div class="text-center">
+            <h1 class="display-4">Welcome</h1>
+            <div class="topSection">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+
+                        <tbody>
+                            @foreach (var alarm in siteAlarms)
+                            {
+                                <tr>
+
+                                    <td class="tableMap">
+                                        <h4>Site</h4> @alarm.Site
+                                    </td>
+                                    <td class="tableMap">
+
+                                        <h4>Time Stamp</h4>
+                                        @alarm.TimeStamp
+
+                                    </td>
+
+                                    <td class="tableMap">
+
+                                        <h4>Message</h4>
+                                        @alarm.Message
+                                    </td>
+
+                                    <td class="tableMap">
+
+                                        <h4>Ack</h4>
+                                        @(alarm.Ack ? "Yes" : "No")
+                                    </td>
+
+                                    <td class="tableMap">
+
+                                        <h4>
+                                            Notes</h4>
+                                        @alarm.Note
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cardsCon">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="card-title">Live Sites</h4>
+                            <h3 class="card-text">8</h3>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h4 class="card-title">DECOM Sites</h4>
+                            <h3 class="card-text">3</h3>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">For Technical Support call:
+
+                            </h5>
+                            <h5 class="card-text">
+                                1-619-546-4281</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<h1>Active Sites</h1>
+            <div class="table2-responsive">
+                 <table class="table table-hover">
+
+                        <tbody>
+                            @foreach (var alarm in siteAlarms)
+                            {
+                                <tr>
+
+                                    <td class="tableMap">
+                                        <h4>Site</h4> @alarm.Site
+                                    </td>
+                                    <td class="tableMap">
+
+                                        <h4>Time Stamp</h4>
+                                        @alarm.TimeStamp
+
+                                    </td>
+
+                                    <td class="tableMap">
+
+                                        <h4>Message</h4>
+                                        @alarm.Message
+                                    </td>
+
+                                    <td class="tableMap">
+
+                                        <h4>Ack</h4>
+                                        @(alarm.Ack ? "Yes" : "No")
+                                    </td>
+
+                                    <td class="tableMap">
+
+                                        <h4>
+                                            Notes</h4>
+                                        @alarm.Note
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76A8fWp8T1BOjucD2Zj/qmlWYOIpW1PjJFc0DF6Hc9vYjMQ6Fi7jLRbb8ILdcIN"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

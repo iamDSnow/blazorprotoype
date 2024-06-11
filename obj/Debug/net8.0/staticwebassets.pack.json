@@ -1,8 +1,12 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Derrick.Snow\\Documents\\ds\\Razor\\us3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\us3.bundle.scp.css",
-      "PackagePath": "staticwebassets\\us3.bundle.scp.css"
+      "Id": "C:\\Users\\Derrick.Snow\\Documents\\ds\\Razor\\us3\\wwwroot\\css\\_Layout.css",
+      "PackagePath": "staticwebassets\\css\\_Layout.css"
+    },
+    {
+      "Id": "C:\\Users\\Derrick.Snow\\Documents\\ds\\Razor\\us3\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
     {
       "Id": "C:\\Users\\Derrick.Snow\\Documents\\ds\\Razor\\us3\\wwwroot\\css\\site.css",

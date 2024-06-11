@@ -1,14 +1,13 @@
-/* _content/us3/Pages/Shared/_Layout.cshtml.rz.scp.css */
-body[b-7uir34e1pm] {
+﻿body {
   display: flex;
   flex-direction: column;
   margin: 0;
   font-family: Arial, sans-serif;
 }
-header[b-7uir34e1pm] {
+header {
   width: 100%;
 }
-input[b-7uir34e1pm] {
+input {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -19,7 +18,7 @@ input[b-7uir34e1pm] {
   cursor: pointer;
   color: #8BA3CB;
 }
-.navbar[b-7uir34e1pm] {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,15 +26,15 @@ input[b-7uir34e1pm] {
   padding: 10px;
   border-bottom: 1px solid #ddd;
 }
-.navbar-brand[b-7uir34e1pm] {
+.navbar-brand {
   cursor: pointer;
 }
-.navbar h1[b-7uir34e1pm] {
+.navbar h1 {
   margin: 0;
   text-align: center;
   flex-grow: 1;
 }
-.navbar-button[b-7uir34e1pm] {
+.navbar-button {
   font-weight: 400;
   cursor: pointer;
   font-size: 14px;
@@ -44,26 +43,26 @@ input[b-7uir34e1pm] {
   background: #F5F7FA;
   border-radius: 40px;
 }
-.navbar-button:hover[b-7uir34e1pm] {
+.navbar-button:hover {
   background-color: #ddd;
 }
-.navbar form[b-7uir34e1pm], .navbar button[b-7uir34e1pm] {
+.navbar form, .navbar button {
   margin-right: auto;
 }
-.content-container[b-7uir34e1pm] {
+.content-container {
   display: flex;
   flex: 1;
 }
-.sidebar[b-7uir34e1pm] {
+.sidebar {
   height: calc(100vh - 60px); /* Adjusted for the height of the navbar */
-  width: 165px;
+  width: 200px;
   background-color: #f8f9fa;
   padding-top: 20px;
   border-right: 1px solid #ddd;
   overflow-y: auto;
   text-transform: capitalize;
 }
-.sidebar a[b-7uir34e1pm], .sidebar .dropdown-item-text[b-7uir34e1pm] {
+.sidebar a, .sidebar .dropdown-item-text {
   display: block;
   padding: 10px 15px;
   text-decoration: none;
@@ -71,24 +70,25 @@ input[b-7uir34e1pm] {
   color: #333;
   cursor: pointer;
 }
-.sidebar a:hover[b-7uir34e1pm], .sidebar .dropdown-item-text:hover[b-7uir34e1pm] {
+.sidebar a:hover, .sidebar .dropdown-item-text:hover {
   background-color: #ddd;
 }
-.dropdown-menu[b-7uir34e1pm] {
+.dropdown-menu {
   display: none;
   padding-left: 20px;
 }
-.dropdown-menu a[b-7uir34e1pm] {
+.dropdown-menu a {
   display: block;
   padding: 5px 15px;
   font-size: 16px;
 }
-.main-content[b-7uir34e1pm] {
+.main-content {
   flex-grow: 1;
   padding: 20px;
   overflow-y: auto;
+  background-color: #F5F7FA;
 }
-footer[b-7uir34e1pm] {
+footer {
   width: 100%;
   padding: 10px;
   background: #f8f9fa;
